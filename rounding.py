@@ -80,13 +80,7 @@ class Rounding:
             else:
                 number = self.Trim(number, decLocation + breakpoint + 1)
         except IndexError:
-            print('ERROR: Bankers_Rounding breakpoint must have a value one',
-                  'greater than the length of the inputed number beyond',
-                  'the decimal point.')
-            print('Breakpoint: ' + str(breakpoint))
-            print('Number: ' + str(self.ListToFloat(number)))
-
-            raise SystemExit(0)
+            pass
 
         # List -> Float
         number = self.ListToFloat(number)
